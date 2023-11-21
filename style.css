@@ -1,0 +1,95 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    /* Ajusté à 100% pour occuper la largeur complète du conteneur parent */
+
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: grey;
+    /* Ajouté pour inclure la bordure et le padding dans la largeur */
+}
+
+ul {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px;
+    /* Utilisation de repeat pour simplifier la définition des colonnes */
+    gap: 10px;
+
+    align-items: center;
+    width: 35%;
+}
+
+/* La sélecteur ul li n'est pas nécessaire, car il est redondant avec le sélecteur li */
+
+#wifi {
+    background: rgb(230, 158, 230);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#wifi-1 {
+    background: rgb(230, 158, 230);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.winbar {
+    background: rgb(66, 66, 66);
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.winbar-element {
+    display: flex;
+    justify-content: center;
+}
+
+#wifi-1::after {
+    content: "SFR_FC8F";
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+}
+
+#wifi-2 {
+    background: rgb(230, 158, 230);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#wifi-2::after {
+    content: "non connecté";
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+}
+
+#plane {
+    position: relative;
+}
+
+#plane::after {
+    content: "mode avion";
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+}
